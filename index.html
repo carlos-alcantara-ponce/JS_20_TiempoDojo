@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+
+<body onload="fshowcookieswin()">
+    <!-- Venana de cookies -->
+    <div id="cookies-window">
+        <img src="./images/cookie.png" alt="Not available">
+        <div id="cookie_text">
+            <h3>Stop! Cookie time</h3>
+            <p>We use cookies (sadly not the edible ones) to personalize content and ads, to provide social media
+                features
+                and to analyse our traffic. <a href="#">Read more...</a>.</p>
+        </div>
+        <button id="cookies-btn" onclick="fhidecookieswin()">I Accept</button>
+    </div>
+    <div id="container">
+        <!-- Barra superior -->
+        <div id="barra_sup">
+            <div id="logo">
+                <h1>Dojo Weather</h1>
+            </div>
+            <div>
+                <ul id="city_list">
+                    <li>
+                        <h3 onclick="falert_city()">Burbank</h3>
+                    </li>
+                    <li>
+                        <h3 onclick="falert_city()">Chicago</h3>
+                    </li>
+                    <li>
+                        <h3 onclick="falert_city()">Dallas</h3>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- Titulo -->
+        <div id="city_title">
+            <div id="city_mame">
+                <h2>San Jose</h2>
+            </div>
+            <div id="temp_unit">
+                <p>show temperature in </p>
+                <select onclick="fchange_units()" id="temp_unit_option">
+                    <option>C&deg;</option>
+                    <option>F&deg;</option>
+                </select>
+
+            </div>
+        </div>
+        <hr class="big_hor_line">
+        <!-- Parte central -->
+        <div id="main">
+            <!-- columnas de dias -->
+            <div class="day">
+                <div class="day_name">
+                    <h3>Today</h3>
+                </div>
+                <div class="day_weather_img_div">
+                    <img class="day_weather_img" src="./images/some_rain.png" alt="Not available">
+                </div>
+                <div class="day_weather_text">some rain</div>
+                <div class="day_temp">
+                    <h4 class="day_temp_max">24&deg;</h4>
+                    <h4 class="day_temp_min">18&deg;</h4>
+                </div>
+            </div>
+            <div class="day">
+                <div class="day_name">
+                    <h3>Tomorrow</h3>
+                </div>
+                <div class="day_weather_img_div">
+                    <img class="day_weather_img" src="./images/some_sun.png" alt="Not available">
+                </div>
+                <div class="day_weather_text">some sun</div>
+                <div class="day_temp">
+                    <h4 class="day_temp_max">27&deg;</h4>
+                    <h4 class="day_temp_min">19&deg;</h4>
+                </div>
+            </div>
+            <div class="day">
+                <div class="day_name">
+                    <h3>Friday</h3>
+                </div>
+                <div class="day_weather_img_div">
+                    <img class="day_weather_img" src="./images/some_clouds.png" alt="Not available">
+                </div>
+                <div class="day_weather_text">some clouds</div>
+                <div class="day_temp">
+                    <h4 class="day_temp_max">21&deg;</h4>
+                    <h4 class="day_temp_min">16&deg;</h4>
+                </div>
+            </div>
+            <div class="day">
+                <div class="day_name">
+                    <h3>Saturday</h3>
+                </div>
+                <div class="day_weather_img_div">
+                    <img class="day_weather_img" src="./images/some_sun.png" alt="Not available">
+                </div>
+                <div class="day_weather_text">some sun</div>
+                <div class="day_temp">
+                    <h4 class="day_temp_max">26&deg;</h4>
+                    <h4 class="day_temp_min">21&deg;</h4>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,146 @@
+* {
+    padding: 0;
+    margin: 0;
+    /* outline: 1px solid red; */
+}
+
+
+/* Cookie window */
+#cookies-window {
+
+    border-style: solid;
+    position: fixed;
+    top: 80%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 0px 20px 0px 0px;
+    margin: 0px 400px 0px 400px;
+
+}
+
+#cookies-btn {
+
+    background-color: lightskyblue;
+    width: 70px;
+    height: 35px;
+    box-shadow: 5px 5px black;
+    color: black;
+
+
+
+}
+
+/* Barra superior */
+
+#barra_sup {
+
+    background-color: lightskyblue;
+    color: white;
+    padding: 20px 400px 20px 400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+#city_list {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Titulo */
+
+
+#city_title {
+    padding: 20px 400px 20px 400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#temp_unit {
+
+    display: flex;
+    gap: 10px;
+
+}
+
+#temp_unit_option {
+    border: 1px solid black;
+}
+
+.big_hor_line {
+    border: solid;
+    margin: 0px 400px 0px 400px;
+
+}
+
+
+/* Parte central */
+
+#main {
+    display: flex;
+    margin: 40px 400px 0px 400px;
+
+    gap: 20px;
+}
+
+.day {
+
+    background-color: rgb(208, 208, 208);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.day_name {
+    margin-top: 20px;
+}
+
+.day_weather_img_div {
+
+    display: flex;
+    justify-content: center;
+}
+
+.day_weather_img {
+
+    margin: 40px 0px 40px 0px;
+    border-radius: 50%;
+    max-width: 50%;
+}
+
+.day_temp {
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.day_temp_max {
+
+    color: red;
+}
+
+.day_temp_min {
+    color: blue;
+}
+
+
+
+
+
+
+
+
+
+/* columnas de dias */
